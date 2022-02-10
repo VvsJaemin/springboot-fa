@@ -19,8 +19,6 @@ public class SearchLocalRes {
 
     private int display;
 
-    private String category;
-
     private List<SearchLocalItem> items;
 
 
@@ -33,6 +31,7 @@ public class SearchLocalRes {
         private String title;
         private String link;
         private String description;
+        private String category;
         private String telephone;
         private String address;
         private String roadAddress;

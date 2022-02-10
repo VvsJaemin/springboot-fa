@@ -1,19 +1,16 @@
-package com.example.restaurant.wishlist.entity;
+package com.example.restaurant.wishlist.dto;
 
-import com.example.restaurant.db.MemoryDBEntity;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
-public class WishListEntity extends MemoryDBEntity {
-
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+public class WishListDto {
+    private Integer index;
     private String title;                   // 음식명, 장소명
     private String category;                // 카테고리
     private String address;                 // 주소
@@ -23,6 +20,4 @@ public class WishListEntity extends MemoryDBEntity {
     private boolean isVisit;                // 방문여부
     private int visitCount;                 // 방문 카운트
     private LocalDateTime lastVisitDate;    // 마지막 방문일자
-
-
 }
